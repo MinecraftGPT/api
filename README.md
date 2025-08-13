@@ -16,7 +16,7 @@ The **MinecraftGPT API** is the central AI backend for all [MinecraftGPT](https:
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/MinecraftGPT/api.git
+git clone https://github.com/MinecraftGPT/minecraft-gpt-api.git
 cd api
 ```
 
