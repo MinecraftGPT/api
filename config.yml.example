@@ -1,0 +1,31 @@
+# API Configuration
+api:
+  openrouter_api_key: "your_openrouter_api_key" # Replace with your actual key
+
+# Model Configuration
+model:
+  default_name: "meta-llama/llama-3.1-8b-instruct:free"
+  temperature: 0.7
+  # Allow clients to override the model on a per-request basis
+  allow_client_override: true
+
+# Prompt Configuration
+prompt:
+  system_message: "You are a helpful Minecraft assistant. Remember the player's previous questions and answer in context."
+  user_template: "Player {player} asks: {message}"
+
+# Player Memory
+memory:
+  # Max number of conversation turns (1 turn = 1 user message + 1 AI reply) to remember per player.
+  max_history_size: 5
+
+# Security
+security:
+  # Rate limit to prevent spam. Format: "requests/period".
+  # Periods: "second", "minute", "hour", "day"
+  rate_limit: "15/minute"
+
+# Server Settings
+server:
+  host: "127.0.0.1"
+  port: 8000

@@ -1,0 +1,8 @@
+fastapi
+httpx
+python-dotenv
+uvicorn
+pyyaml
+slowapi
+mkdocs
+mkdocs-material
